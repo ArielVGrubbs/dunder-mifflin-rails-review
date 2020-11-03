@@ -1,0 +1,8 @@
+<h1>Show <%="#{@employee.first_name}"%></h1>
+<p><%= @employee.first_name %></p>
+<p><%= @employee.last_name %></p>
+<p><%= @employee.alias %></p>
+<p><%= @employee.title %></p>
+<p><%= @employee.office %></p>
+<p><%= link_to "Back to Employee Index", employees_path %></p>
+<p><%= link_to "#{@employee.first_name}'s dog: #{@employee.dog.name}", dog_path(@employee.dog)%></p>

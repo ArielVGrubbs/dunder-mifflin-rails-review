@@ -1,0 +1,7 @@
+<ul>
+    <% @dogs.each do |dog| %>
+        <li><%= link_to "#{dog.name}", dog_path(dog) %></li>
+    <% end %>
+</ul>
+
+<p><%= link_to "Sort Dogs by Number of Employees", "/dogs/alternate_index" %></p>
